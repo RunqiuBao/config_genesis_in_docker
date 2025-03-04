@@ -17,7 +17,7 @@ mv /opt/lib/python3.9/site-packages/mpl_toolkits /opt/lib/python3.9/site-package
 echo -e "finished installing genesis."
 
 # install LuisaRenderer
-(cd ../libs/Genesis/ext/LuisaRender/build/bin/
+(cd ../libs/Genesis/genesis/ext/LuisaRender/build/bin/
 export PYTHONPATH=$(pwd):$PYTHONPATH
 cd ../../ && echo -e "linking $(pwd)"
 ln -s $(pwd) /usr/local/lib/python3.9/dist-packages/genesis/ext/)
