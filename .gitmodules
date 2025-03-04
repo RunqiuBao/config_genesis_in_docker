@@ -1,0 +1,6 @@
+[submodule "libs/Genesis"]
+	path = libs/Genesis
+	url = https://github.com/RunqiuBao/Genesis
+[submodule "libs/cmake"]
+	path = libs/cmake
+	url = https://github.com/RunqiuBao/cmake
