@@ -9,6 +9,7 @@ git submodule update --init --recursive)
 apt update
 apt install python3-pip -y
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+apt install python3-dev -y
 (cd ../libs/Genesis/ && pip3 install . -i https://pypi.org/simple) && echo -e "${GREEN}installation of genesis succeeded!${RESET_COLOR}"
 pip3 install joblib==1.2.0 -i https://pypi.org/simple
 pip3 install scikit-learn==1.5.2 -i https://pypi.org/simple
