@@ -21,8 +21,8 @@ mv /opt/lib/python3.9/site-packages/mpl_toolkits /opt/lib/python3.9/site-package
 echo -e "${GREEN}finished installing genesis.${RESET_COLOR}"
 
 # install LuisaRenderer
-(cd ../../ && echo -e "linking $(pwd)"
-rm -r /usr/local/lib/python3.9/dist-packages/genesis/ext/LuisaRender
+(rm -r /usr/local/lib/python3.9/dist-packages/genesis/ext/LuisaRender
+cd ../libs/Genesis/genesis/ext/LuisaRender/ && echo -e "linking $(pwd)"
 ln -s $(pwd) /usr/local/lib/python3.9/dist-packages/genesis/ext/)
 
 cd ../libs/Genesis/genesis/ext/LuisaRender/build/bin/
