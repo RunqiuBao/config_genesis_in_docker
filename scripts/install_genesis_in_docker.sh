@@ -24,6 +24,7 @@ echo -e "${GREEN}finished installing genesis.${RESET_COLOR}"
 (cd ../libs/Genesis/genesis/ext/LuisaRender/build/bin/
 export PYTHONPATH=$(pwd):$PYTHONPATH
 cd ../../ && echo -e "linking $(pwd)"
+rm -r /usr/local/lib/python3.9/dist-packages/genesis/ext/LuisaRender
 ln -s $(pwd) /usr/local/lib/python3.9/dist-packages/genesis/ext/)
 
 python3 -c "import LuisaRenderPy" && echo -e "done."
