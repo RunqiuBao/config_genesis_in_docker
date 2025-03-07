@@ -11,6 +11,14 @@ apt install python3-pip -y
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 apt install python3-dev -y
 (cd ../libs/Genesis/ && pip3 install -r requirements.txt -i https://pypi.org/simple) && pip install --prefix=/usr/local dist/genesis_world-0.2.1-cp39-cp39-linux_x86_64.whl && echo -e "${GREEN}installation of genesis succeeded!${RESET_COLOR}"
+pip3 install pycollada -i https://pypi.org/simple
+pip3 install pygltflib==1.16.0 -i https://pypi.org/simple
+pip3 install joblib==1.2.0 -i https://pypi.org/simple
+pip3 install scikit-learn==1.5.2 -i https://pypi.org/simple
+pip3 install numpy==1.26.4 -i https://pypi.org/simple
+pip3 install networkx==2.8.8 -i https://pypi.org/simple
+pip3 install scikit-image==0.19.3 -i https://pypi.org/simple
+pip3 install trimesh -i https://pypi.org/simple
 mv /opt/lib/python3.9/site-packages/mpl_toolkits /opt/lib/python3.9/site-packages/__deprecated__mpl_toolkits
 echo -e "${GREEN}finished installing genesis.${RESET_COLOR}"
 
