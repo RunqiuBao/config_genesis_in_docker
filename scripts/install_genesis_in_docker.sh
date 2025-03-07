@@ -10,7 +10,7 @@ apt update
 apt install python3-pip -y
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 apt install python3-dev -y
-(cd ../libs/Genesis/ && pip3 install -r requirements.txt -i https://pypi.org/simple --no-deps) && pip install --prefix=/usr/local dist/genesis_world-0.2.1-cp39-cp39-linux_x86_64.whl && echo -e "${GREEN}installation of genesis succeeded!${RESET_COLOR}"
+(cd ../libs/Genesis/ && pip3 install -r requirements.txt -i https://pypi.org/simple --no-deps && pip install --prefix=/usr/local dist/genesis_world-0.2.1-cp39-cp39-linux_x86_64.whl --no-deps) && echo -e "${GREEN}installation of genesis succeeded!${RESET_COLOR}"
 pip3 install pycollada -i https://pypi.org/simple
 pip3 install pygltflib==1.16.0 -i https://pypi.org/simple
 pip3 install joblib==1.2.0 -i https://pypi.org/simple
