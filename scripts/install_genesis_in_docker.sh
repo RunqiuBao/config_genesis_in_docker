@@ -15,8 +15,9 @@ export LD_LIBRARY_PATH=/usr/local/nccl/lib:$LD_LIBRARY_PATH
 
 # install genesis
 apt install python3-dev -y
+[ -d /opt/lib/python3.9/site-packages/genesis] && mv /opt/lib/python3.9/site-packages/genesis /opt/lib/python3.9/site-packages/__deprecated_genesis
 (cd ../libs/Genesis/ && pip3 install -r requirements.txt -i https://pypi.org/simple && pip install --prefix=/usr/local dist/genesis_world-0.2.1-cp39-cp39-linux_x86_64.whl --no-deps) && echo -e "${GREEN}installation of genesis succeeded!${RESET_COLOR}"
-mv /opt/lib/python3.9/site-packages/mpl_toolkits /opt/lib/python3.9/site-packages/__deprecated__mpl_toolkits
+[ -d /opt/lib/python3.9/site-packages/mpl_toolkitsi ] && mv /opt/lib/python3.9/site-packages/mpl_toolkits /opt/lib/python3.9/site-packages/__deprecated__mpl_toolkits
 pip3 install xmltodict -i https://pypi.org/simple
 echo -e "${GREEN}finished installing genesis.${RESET_COLOR}"
 
