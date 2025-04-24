@@ -16,7 +16,7 @@ export LD_LIBRARY_PATH=/usr/local/nccl/lib:$LD_LIBRARY_PATH
 # install genesis
 apt install python3-dev -y
 [ -e /opt/lib/python3.9/site-packages/genesis ] && mv /opt/lib/python3.9/site-packages/genesis /opt/lib/python3.9/site-packages/__deprecated_genesis && mv /opt/lib/python3.9/site-packages/genesis_world-0.2.1-py3.9.egg-info /opt/lib/python3.9/site-packages/__deprecated_genesis_world-0.2.1-py3.9.egg-info
-[ -e /opt/lib/python3.9/site-packages/taichi ] && mv /opt/lib/python3.9/site-packages/taichi/ /opt/lib/python3.9/site-packages/__deprecated_taichi && mv /usr/local/lib/python3.9/site-packages/taichi-1.7.3.dist-info /usr/local/lib/python3.9/site-packages/__deprecated_taichi-1.7.3.dist-info
+[ -e /opt/lib/python3.9/site-packages/taichi ] && mv /opt/lib/python3.9/site-packages/taichi/ /opt/lib/python3.9/site-packages/__deprecated_taichi && mv /opt/lib/python3.9/site-packages/taichi-1.7.3.dist-info /opt/lib/python3.9/site-packages/__deprecated_taichi-1.7.3.dist-info
 (cd ../libs/Genesis/ && pip3 install -r requirements.txt -i https://pypi.org/simple && pip install --prefix=/usr/local dist/genesis_world-0.2.1-cp39-cp39-linux_x86_64.whl --no-deps) && echo -e "${GREEN}installation of genesis succeeded!${RESET_COLOR}"
 [ -d /opt/lib/python3.9/site-packages/mpl_toolkitsi ] && mv /opt/lib/python3.9/site-packages/mpl_toolkits /opt/lib/python3.9/site-packages/__deprecated__mpl_toolkits
 pip3 install xmltodict -i https://pypi.org/simple
